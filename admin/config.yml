@@ -1,0 +1,48 @@
+backend:
+  name: github
+  repo: "YOUR_GITHUB_USERNAME/YOUR_REPO_NAME" # e.g. mathsolved/mathsolved.github.io
+  branch: main
+  auth_type: implicit
+  # If you want to allow preview deployments, you can add
+  # app_id: "YOUR_GITHUB_OAUTH_APP_ID"   # optional but recommended
+
+media_folder: "assets/uploads" # where uploaded images are stored in the repo
+public_folder: "/assets/uploads"
+
+site_url: "https://yourusername.github.io"
+
+collections:
+
+  - name: "posts"
+    label: "News & Notices"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "courses"
+    label: "Courses"
+    folder: "_courses"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Name (slug)", name: "name", widget: "string"}
+      - {label: "Excerpt", name: "excerpt", widget: "string"}
+      - {label: "Duration", name: "duration", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "faculty"
+    label: "Faculty"
+    folder: "_faculty"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Full name", name: "title", widget: "string"}
+      - {label: "Slug (name)", name: "name", widget: "string"}
+      - {label: "Designation", name: "designation", widget: "string"}
+      - {label: "Email", name: "email", widget: "string"}
+      - {label: "Bio", name: "body", widget: "markdown"}
