@@ -1,0 +1,17 @@
+title: "MS College"
+email: info@mscollege.ac.in
+description: "MS Science & Commerce College - Excellence in Education"
+baseurl: "" # leave empty for user.github.io sites
+url: "https://yourusername.github.io" # replace with your GitHub Pages site url
+markdown: kramdown
+theme: minima
+
+collections:
+  faculty:
+    output: true
+    permalink: /faculty/:name/
+  courses:
+    output: true
+    permalink: /courses/:name/
+  posts:
+    output: true
