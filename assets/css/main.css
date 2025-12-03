@@ -1,0 +1,11 @@
+body { font-family: Arial, sans-serif; margin:0; color:#222; background:#f5f7fa;}
+.container { max-width:1000px; margin: 0 auto; padding: 20px; }
+.site-header { background:#003399; color:white; padding:15px 0; }
+.site-title { margin:0; display:inline-block; padding-left:10px; }
+.site-title a { color: white; text-decoration:none; }
+.site-nav { float:right; }
+.site-nav a { color: white; margin-left:15px; text-decoration:none; font-weight:bold; }
+.hero { background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat; color:white; padding:80px 20px; text-align:center; }
+.btn { background:#ffcc00; color:#002266; padding:10px 18px; display:inline-block; border-radius:6px; text-decoration:none; font-weight:bold; }
+.featured, .intro { background:white; margin:20px 0; padding:20px; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.05); }
+.site-footer { background:#003399; color:white; padding:12px 0; text-align:center; margin-top:40px; }
